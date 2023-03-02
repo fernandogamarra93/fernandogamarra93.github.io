@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">
+            <div class="toggle" id="id-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu" id="id-menu">
+                <a href="#id-sobre-mi">Sobre mi</a>
+                <a href="#id-experiencia">Experiencia</a>
+                <a href="#id-portafolio">Portafolio</a>
+                <a href="#id-habilidades">Habilidades</a>
+                <a href="#id-contacto">Contacto</a>
+            </nav>
+            
+        </div>
+        <section class="contenedor-nombre" id="id-sobre-mi">
+            <div class="image-nombre">
+                <div class="imagen">
+                    <img src="img/imagen-perfil.jpg" alt="Foto de perfil">
+                </div>
+                <div class="name">
+                    <h1 class="name-title">Soy Fernando Gamarra</h1>
+                    <h2 class="name-text">Técnico en desarrollo de software</h2>
+                </div>
+            </div>
+        </section>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="resumen">
+                    <h3 class="resumen-titulo">Sobre mi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo! Similique eius harum non fugit doloremque molestias fugiat, eligendi tenetur, odio atque illo magnam commodi modi consequuntur ducimus nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora optio nihil, maiores illo nam, mollitia fac</p>
+                </div>
+                <div class="contenido-textos">
+                    <ul class="about-list">
+                        <li class="about-list-item">Edad: <span class="about-list-span">30</span></li>
+                        <li class="about-list-item">Pais de residencia: <span class="about-list-span">Argentina</span></li>
+                        <li class="about-list-item">Direccion: <span class="about-list-span">Buenos Aires</span></li>
+                        <li class="about-list-item">Email: <span class="about-list-span">fernando@gmail.com</span></li>
+                        <li class="about-list-item">Telefono: <span class="about-list-span">1151654165</span></li>
+                    </ul>    
+                </div>
+            </div>
+        </section>
+        <section class="contenedor experiencia">
+            <div class="contenedor-experiencia">
+                <h2 class="titulo" id="id-experiencia">Experiencia</h2>
+                <div class="experiencia-item">
+                    <h3 class="resumen-titulo">Desarrollador full stack</h3>
+                    <h4 class="experiencia-item-compania">Compania<span>2021-2022</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo! Similique eius harum non fugit doloremque molestias fugiat, eligendi tenetur, odio atque illo magnam commodi modi consequuntur ducimus nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora optio nihil, maiores illo nam, mollitia fac</p>
+                </div>
+                <div class="experiencia-item">
+                    <h3 class="resumen-titulo">Desarrollador backend</h3>
+                    <h4 class="experiencia-item-compania">Compania<span>2019-2021</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo! Similique eius harum non fugit doloremque molestias fugiat, eligendi tenetur, odio atque illo magnam commodi modi consequuntur ducimus nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora optio nihil, maiores illo nam, mollitia fac</p>
+                </div>
+                <div class="experiencia-item">
+                    <h3 class="resumen-titulo">Desarrollador frontend</h3>
+                    <h4 class="experiencia-item-compania">Compania<span>2018-2019</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo! Similique eius harum non fugit doloremque molestias fugiat, eligendi tenetur, odio atque illo magnam commodi modi consequuntur ducimus nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora optio nihil, maiores illo nam, mollitia fac</p>
+                </div>
+                <div class="experiencia-item">
+                    <h3 class="resumen-titulo">Desarrollador frontend</h3>
+                    <h4 class="experiencia-item-compania">Compania<span>2017-2018</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo! Similique eius harum non fugit doloremque molestias fugiat, eligendi tenetur, odio atque illo magnam commodi modi consequuntur ducimus nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora optio nihil, maiores illo nam, mollitia fac</p>
+                </div>
+              
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo" id="id-portafolio">Portafolio</h2>
+                <div class="galeria-contenedor">
+                    <div class="portafolio-imagen" onclick='mostrarDatos("id-proyecto-1","posicion-proyecto-1")'>
+                        <img src="img/icono-ventas.jpg" alt="">
+                        <h4>Sistema de ventas</h4>
+                    </div>
+                    <div class="resumen-portafolio" id="id-proyecto-1" onclick='ocultarDatos("id-proyecto-1","posicion-proyecto-1")'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, recusandae. Impedit debitis ipsa</p><br>
+                        <p><span>Tecnoligias usadas:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portafolio-imagen" onclick='mostrarDatos("id-proyecto-2","posicion-proyecto-2")'>
+                        <img src="img/icono-registro.jpg" alt="">
+                        <h4>Registro de usuarios</h4>
+                    </div>
+                    <div class="resumen-portafolio" id="id-proyecto-2" onclick='ocultarDatos("id-proyecto-2","posicion-proyecto-2")'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, recusandae. Impedit debitis ipsa</p><br>
+                        <p><span>Tecnoligias usadas:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portafolio-imagen" onclick='mostrarDatos("id-proyecto-3","posicion-proyecto-3")'>
+                        <img src="img/icono-lista.jpg" alt="">
+                        <h4>Lista de tareas</h4>
+                    </div>
+                    <div class="resumen-portafolio" id="id-proyecto-3" onclick='ocultarDatos("id-proyecto-3","posicion-proyecto-3")'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, recusandae. Impedit debitis ipsa</p><br>
+                        <p><span>Tecnoligias usadas:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portafolio-imagen" onclick='mostrarDatos("id-proyecto-4","posicion-proyecto-4")'>
+                        <img src="img/icono-clima.png" alt="">
+                        <h4>App de clima</h4>
+                    </div>
+                    <div class="resumen-portafolio" id="id-proyecto-4" onclick='ocultarDatos("id-proyecto-4","posicion-proyecto-4")'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, recusandae. Impedit debitis ipsa</p><br>
+                        <p><span>Tecnoligias usadas:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor habilidades">
+            <h2 class="titulo" id="id-habilidades">Habilidades</h2>
+            <div class="contenedor-habilidades">
+                <div class="habilidades-imagen">
+                    <img src="img/icono-html.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+                <div class="habilidades-imagen">
+                    <img src="img/icono-css.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="habilidades-imagen">
+                    <img src="img/icono-javascript.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>Javascript</h4>
+                    </div>
+                </div>
+                <div class="habilidades-imagen">
+                    <img src="img/icono-mysql.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>MySQL</h4>
+                    </div>
+                </div>
+                <div class="habilidades-imagen">
+                    <img src="img/icono-react.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>React</h4>
+                    </div>
+                </div>
+                <div class="habilidades-imagen">
+                    <img src="img/icono-springboot.jpg" alt="">
+                    <div class="habilidades-texto">
+                        <h4>SpringBoot</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div>
+                <h3 class="titulo-footer" id="id-contacto">Redes sociales</h3>
+            </div>
+            <div class="social-links">
+                <ul>
+                  <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+        </div>
+        <h2 class="titulo-final">&copy; Fernando Gamarra</h2>
+    </footer>
+    <script src="https://kit.fontawesome.com/91fe50f84f.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('id-toggle').onclick = () =>{
+        document.getElementById('id-menu').classList.toggle("open-menu");
+        }
+    </script>
+    <script src="js/mostrar-datos.js"></script>
+</body>
+</html>
